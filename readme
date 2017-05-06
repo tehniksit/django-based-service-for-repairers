@@ -1,6 +1,6 @@
-## The django-based service for employees of repair's service with database.
+The django-based service for employees of repair's service with database.
 
-## This is my first web-app which written on python-django.
-## I have a little plan of development. And i am going to implement that as it possible.
+This is my first web-app which written on python-django.
+I have a little plan of development. And i am going to implement that as it possible.
 
-## It uses SqLite3.
+It uses SqLite3.
