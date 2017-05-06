@@ -1,0 +1,95 @@
+table {
+    border: solid 1px;
+    border-collapse: collapse;
+    }
+th {
+    border: 1px solid black;
+    border-collapse: collapse;
+    }
+td {
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+    }
+
+body {
+    background: gainsboro;
+   }
+.content {
+    border: solid 1px;
+    position:absolute;
+    background: white;
+    width: 20%;
+    height: 90%;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-left: 1%;
+}
+p {color: black;}
+
+.drop {
+    background: white;
+    border: solid 1px;
+    position:absolute;
+    width: 65%;
+    height: 90%;
+    left:400px;
+    top:100px;
+
+    }
+.title{
+    text-align: center;
+    margin-top: 10%;
+    padding: 1px;
+
+    }
+.login{
+    background: white;
+    text-align: center;
+    border: solid 1px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-color: darkslategrey;
+    align-items: center;
+    margin-left: 40%;
+    margin-right: 40%;
+}
+
+.search {
+    position: static;
+    margin: 10px;
+}
+
+#serchfield {
+    width: 250px;
+}
+
+#out_button {
+    position: absolute;
+    margin-left: 420%;
+    margin-top: 1%;
+    border: solid 1px;
+}
+#order_button {
+    position: absolute;
+    margin-left: 1%;
+    margin-top: 1%;
+    border: solid 1px;
+}
+
+#device_button {
+    position: absolute;
+    margin-left: 20%;
+    margin-top: 1%;
+    border: solid 1px;
+}
+#part_button {
+    position: absolute;
+    margin-left: 47%;
+    margin-top: 1%;
+    border: solid 1px;
+}
+
+.navigation {
+    border: solid 1px;
+}

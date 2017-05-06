@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+
+{% block main_title %}
+    <title>ЗАЯВКИ</title>
+{% endblock %}
+
+{% block title_form %}
+    <h3>Оформить акт</h3>
+{% endblock %}
+
+
+{% block order %}
+{{ form }}
+
+{% endblock %}
+
+{% block table %}
+
+        <form method="POST">
+
+                <table class="table-bordered" width=100%>
+                    <col width=10%>
+                    <col width=20%>
+                    <col width=20%>
+                    <col width=20%>
+                    <col width=10%>
+                    <col width=10%>
+                    <tr><th>Дата</th><th>Клиент</th><th>Устройство</th><th>Серийный номер</th><th>Счетчик</th><th>Мастер</th></tr>
+                </table>
+        {% for order in query_1 %}
+
+            <table class="table-bordered" width=100%>
+                <col width=10%>
+                <col width=20%>
+                <col width=20%>
+                <col width=20%>
+                <col width=10%>
+                <col width=10%>
+                <tr><td>{{ order.date }}</td><td>{{ order.order_customer.newcus_name }}</td><td>{{ order.order_device.brand }} {{ order.order_device.br_model }}</td><td>{{ order.order_device.serial_num }}</td><td>{{ order.count_now }}</td><td>{{ order.order_repaier.repaier_name }}</td>
+                </tr>
+            </table>
+        {% endfor %}
+
+    </form>
+{% endblock %}

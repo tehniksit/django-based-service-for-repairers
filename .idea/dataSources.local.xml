@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Django default" uuid="ac03b4b1-ed3a-419b-b846-b87b30e75817">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <auth-required>false</auth-required>
+      <first-sync>true</first-sync>
+      <introspection-schemas>*</introspection-schemas>
+    </data-source>
+    <data-source name="Django default [2]" uuid="2ed2c2f0-0ba9-4506-b1ce-660431a2ce76">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <auth-required>false</auth-required>
+      <first-sync>true</first-sync>
+      <introspection-schemas>*</introspection-schemas>
+    </data-source>
+    <data-source name="C:\Users\Пользователь\PycharmProjects\untitled2\db.sqlite3" uuid="220fd809-cde8-48a0-a632-2788e95f9ca1">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <secret-storage>master_key</secret-storage>
+      <auth-required>false</auth-required>
+      <first-sync>true</first-sync>
+    </data-source>
+  </component>
+</project>

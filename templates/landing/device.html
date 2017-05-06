@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block main_title %}
+    <title>УСТРОЙСТВА</title>
+{% endblock %}
+
+{% block title_form %}
+    <h3>Добавить устройство</h3>
+{% endblock %}
+
+
+{% block device %}
+    {{ form }}
+{% endblock %}
+
+{% block table %}
+    <form method="POST">
+
+                <table class="table-bordered" width=100%>
+                    <col width=30%>
+                    <col width=30%>
+                    <col width=30%>
+                    <col width=10%>
+                    <tr><th>Владелец</th><th>Модель</th><th>Серийный номер</th><th>Счетчик</th></tr>
+                </table>
+        {% for device in query_1 %}
+
+            <table class="table-bordered" width=100%>
+                <col width=30%>
+                <col width=30%>
+                <col width=30%>
+                <col width=10%>
+                <tr><td>{{ device.device_customer.newcus_name }}</td><td>{{ device.brand }} {{ device.br_model }} </td><td>{{ device.serial_num }}</td><td>{{ device.total_count }}</td>
+                </tr>
+            </table>
+        {% endfor %}
+
+    </form>
+
+{% endblock %}
+
+
+
