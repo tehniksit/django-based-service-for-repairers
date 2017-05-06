@@ -4,3 +4,16 @@ This is my first web-app which written on python-django.
 I have a little plan of development. And i am going to implement that as it possible.
 
 It uses SqLite3.
+
+
+There are the buttons on main pages- they dont work, because they have direct way of site.
+Unfortunately, i need to make something for working themselves...
+And if you want to see it working you need to rename those with direct way of yours server
+
+        sort of: yourhost/landing/
+                 yourhosr/login/
+                 or 127.0.0.1:8001/login, or 127.0.0.1:8001/landing
+
+Hopefully i make something as quick as it possible.
+
+ If you have any ideas you are welcome for helping.
