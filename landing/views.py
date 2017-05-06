@@ -1,7 +1,11 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 from django.http import HttpResponse
 from django.db.models import Q
 from django.shortcuts import render, redirect
 from landing.form import *
+
 from django.forms import modelform_factory
 
 
