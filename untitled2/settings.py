@@ -30,7 +30,7 @@ INSTALLED_APPS = [
     'login',
     'device',
     'parts',
-    'django_select2',
+    'price',
 
 ]
 

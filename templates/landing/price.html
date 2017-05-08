@@ -1,0 +1,37 @@
+{% extends 'base_price.html' %}
+
+{% block main_title %}
+    <title>Прайс</title>
+{% endblock %}
+
+{% block title_form %}
+    <h3>Введите модель</h3>
+{% endblock %}
+
+
+{% block device_price %}
+    {{ form }}
+{% endblock %}
+
+{% block table %}
+
+
+        {% for device in query_1 %}
+            <h3>{{ device.dev_model }}</h3>
+            <table class="table-hover" width=100%>
+                <col width=80%>
+                <col width=20%>
+                <tr><th scope="row">Категория</th><th>Стоимость</th></tr>
+                <tr class="bg-active"><td>Диагностика</td><td><h4>{{ device.dev_model.category.diagnostika }}</h4></td></tr>
+                <tr><td>Профилактика</td><td><h4>{{ device.dev_model.category.profilaktika }}</h4></td></tr>
+                <tr><td>Техническое обслуживание</td><td><h4>{{ device.dev_model.category.teh_obs }}</h4></td></tr>
+                <tr><td>Ремонт узла 0-й категории сложности</td><td><h4>{{ device.dev_model.category.rem_0kat }}</h4></td></tr>
+                <tr><td>Ремонт узла 1-й категории сложности</td><td><h4>{{ device.dev_model.category.rem_1kat }}</h4></td></tr>
+                <tr><td>Ремонт узла 2-й категории сложности</td><td><h4>{{ device.dev_model.category.rem_2kat }}</h4></td></tr>
+                <tr><td>Ремонт узла 3-й категории сложности</td><td><h4>{{ device.dev_model.category.rem_3kat }}</h4></td></tr>
+            </table>
+        {% endfor %}
+
+
+
+{% endblock %}
