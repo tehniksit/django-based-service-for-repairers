@@ -59,7 +59,7 @@
 
 
           <div class="col-md-8">
-              <form method="POST" action="">
+              <form method="GET" action="">{% csrf_token %}
                   <div class="input-group">
                     <input type="text" class="form-control" name="q" placeholder="Поиск" value="{{ request.GET.q }}">
                     <div class="input-group-btn">
