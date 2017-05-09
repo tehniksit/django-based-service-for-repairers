@@ -1,11 +1,13 @@
 from django.conf.urls import url
 from django.contrib import admin
-from login import views
+from logout import views
 
 
 admin.autodiscover()
 
 urlpatterns = [
-    url(r'^$', views.login, name='login'),
+
+    url(r'^logout/$', views.logout_view, name='logout')
+
 
 ]

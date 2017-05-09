@@ -31,6 +31,7 @@ INSTALLED_APPS = [
     'device',
     'parts',
     'price',
+    'logout',
 
 ]
 
@@ -119,3 +120,4 @@ STATICFILES_DIRS = (
 
 MEDIA_URL = ''
 
+LOGIN_URL = ''

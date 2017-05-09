@@ -1,8 +1,7 @@
-from django.http import HttpResponse
 from django.db.models import Q
 from django.shortcuts import render, redirect
 from price.form import *
-from django.forms import modelform_factory
+
 
 def price(request):
 
