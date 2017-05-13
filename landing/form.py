@@ -1,6 +1,5 @@
-
 from .models import *
-from django_select2.forms import *
+from django import forms
 
 class DeviceForm(forms.ModelForm):
 

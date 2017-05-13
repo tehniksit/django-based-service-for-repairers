@@ -1,10 +1,6 @@
-cx-Freeze==5.0.1
 django==1.11
 django-appconf==1.0.2
-django-select2==5.10.0
 ply==3.10
 pyasn1==0.2.3
 pyowm==2.6.0
-pysmi==0.1.2
-pysnmp==4.3.2
 pytz==2017.2

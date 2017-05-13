@@ -4,7 +4,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 import datetime
-from django_select2.forms import Select2Widget
+
 
 class Customerr(models.Model):
 
@@ -51,8 +51,7 @@ class Device(models.Model):
     serial_num = models.CharField(max_length=128)
     total_count = models.IntegerField()
 
-    widgets = {
-        'device_customer': Select2Widget, }
+
 
     def __str__(self):
         return (str(self.device_customer)+ ' '+str(self.brand) + ' '+str(self.br_model)+ ' '+str(self.serial_num))
