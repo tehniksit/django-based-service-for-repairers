@@ -9,8 +9,30 @@
 {% endblock %}
 
 {% block parts %}
+    {{ form }}
+{% endblock %}
+{% block table %}
 
+    <form method="POST">{% csrf_token %}
 
-    ТУТ формы
+                <table class="table-bordered" width=100%>
+                    <col width=30%>
+                    <col width=30%>
+                    <col width=30%>
+                    <col width=10%>
+                    <tr><th>Категория</th><th>Наименование</th><th>Партномер</th><th>Количество</th></tr>
+                </table>
+        {% for part in query_1 %}
 
+            <table class="table-hover" width=100%>
+                <col width=30%>
+                <col width=30%>
+                <col width=30%>
+                <col width=10%>
+                <tr><td>{{ part.category_part.part_category_name }}</td><td>{{ part.name_part }}</td><td>{{ part.part_number }}</td><td>{{ part.pcs_part }}</td>
+                </tr>
+            </table>
+        {% endfor %}
+
+    </form>
 {% endblock %}
