@@ -4,7 +4,7 @@
 
 from django.shortcuts import render, redirect
 from landing.form import *
-
+from django.db.models import Q
 from django.forms import modelform_factory
 
 
