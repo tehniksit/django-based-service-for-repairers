@@ -1,6 +1,5 @@
 {% extends 'base.html' %}
-
-
+{% load staticfiles %}
 {% block main_title %}
     <title>ЗАЯВКИ</title>
 {% endblock %}
@@ -12,8 +11,17 @@
 
 {% block order %}
 {{ form }}
+{% endblock %}
+
+{% block counter %}
+
+{% block getcount %}
+
+
 
 {% endblock %}
+{% endblock %}
+
 
 {% block table %}
 
@@ -37,10 +45,15 @@
                 <col width=20%>
                 <col width=10%>
                 <col width=10%>
-                <tr><td>{{ order.date }}</td><td>{{ order.order_customer.newcus_name }}</td><td>{{ order.order_device.brand }} {{ order.order_device.br_model }}</td><td>{{ order.order_device.serial_num }}</td><td>{{ order.count_now }}</td><td>{{ order.order_repaier.repaier_name }}</td>
+                <tr><td>{{ order.date|date:"d.m.y" }}</td><td>{{ order.order_customer.newcus_name }}</td><td>{{ order.order_device.brand }} {{ order.order_device.br_model }}</td><td>{{ order.order_device.serial_num }}</td><td>{{ order.count_now }}</td><td>{{ order.order_repaier.repaier_name }}</td>
                 </tr>
             </table>
         {% endfor %}
 
     </form>
+
+
+{% endblock %}
+{% block scripts %}
+{#        <script src="{% static 'js/test.js' %}"></script>#}
 {% endblock %}
