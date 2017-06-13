@@ -1,7 +1,14 @@
+Hello everyone!
+
 The django-based service for employees of repair's service with database.
 
-This is my first web-app which written on python-django.
+This is web-app which written on python-django.
 I have a little plan of development. And i am going to implement that as it possible.
+
+For using app you have to perform this command:
+
+python manage.py migrate
+python manage.py createsuperuser
 
 It uses SqLite3.
 
