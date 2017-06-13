@@ -12,7 +12,12 @@
     </ul>
     <ul class="nav navbar-nav navbar-right">
         {% if user.is_authenticated %}
-             <li><a href=""><span class="glyphicon glyphicon-user"></span>Добро пожаловать, {{ user.first_name }}</a></li>
+             <li><a href=""><span class="glyphicon glyphicon-user"></span>Добро пожаловать,
+                 {% if user.first_name == '' %}
+                     ИМЯ
+                 {% else %}
+                    {{ user.first_name }}
+                 {% endif %}</a></li>
         {% else %}
            <li><a href="{% url 'login' %}"><span class="glyphicon glyphicon-user"></span>Вы не авторизованы</a></li>
         {% endif %}
