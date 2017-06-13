@@ -78,7 +78,7 @@ class Order(models.Model):
     order_customer = models.ForeignKey(Customerr, default="", verbose_name="Владелец")
     order_device = models.ForeignKey(Device, default="", verbose_name="Устройство")
     order_repaier = models.ForeignKey(Repaier, default="", verbose_name="Мастер")
-    order_part = models.ManyToManyField(Part, default="НЕТ", verbose_name="Детали")
+    order_part = models.ManyToManyField(Part, default="НЕТ", verbose_name="Детали", null=True, blank=True)
     order_operation = models.ForeignKey(Operation, default="", verbose_name="Вид работ")
     date = models.DateField(default=datetime.date.today, verbose_name="Дата")
     count_now = models.IntegerField(default=0, verbose_name="Счетчик")
