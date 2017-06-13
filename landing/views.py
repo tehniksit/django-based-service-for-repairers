@@ -10,7 +10,7 @@ from django.forms import modelform_factory
 
 def landing(request):
 
-    query_1 = Order.objects.all()
+    query_1 = Order.objects.all().order_by('-date')
     query = request.GET.get("q")
     if query:
         query_1 = query_1.filter(
