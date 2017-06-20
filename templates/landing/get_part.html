@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block get_parts %}
+
+    {% for order in part1 %}
+        {% for order_part in order.order_part.all %}{{ order_part }}<br/>{% endfor %}
+
+
+
+{% endfor %}
+
+{% endblock %}

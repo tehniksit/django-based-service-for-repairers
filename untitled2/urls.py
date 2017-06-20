@@ -7,6 +7,7 @@ urlpatterns = (
     url(r'^', include('landing.urls')),
     url(r'^', include('login.urls')),
     url(r'^', include('logout.urls')),
+    url(r'^', include('get_parts.urls')),
     url(r'^', include('device.urls')),
     url(r'^', include('parts.urls')),
     url(r'^', include('price.urls')),

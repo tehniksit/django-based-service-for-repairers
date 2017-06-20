@@ -32,6 +32,7 @@ INSTALLED_APPS = [
     'parts',
     'price',
     'logout',
+    'get_parts',
 
 ]
 
@@ -114,7 +115,7 @@ STATIC_ROOT = ''
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (
-    (os.path.join(BASE_DIR, "login/static"), 'C:/Users/Пользователь/PycharmProjects/untitled2/login/static/css/'),
+    (os.path.join(BASE_DIR, "login/static"), '/home/vlad/PycharmProjects/copyies/untitled2/login/static/css/'),
 )
 
 

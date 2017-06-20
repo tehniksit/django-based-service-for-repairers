@@ -6,6 +6,6 @@ from landing import views
 admin.autodiscover()
 
 urlpatterns = [
-    url(r'^landing/', views.landing, name='landing'),
+    url(r'^landing/(?:(?P<sort_id>\d+)/)?$', views.landing, name='landing'),
 
 ]
