@@ -1,0 +1,15 @@
+<table class="table-hover" width=100%>
+                    <col width=7%>
+                    <col width=30%>
+                    <col width=5%>
+                    <col width=5%>
+                    <col width=38%>
+                    <col width=10%>
+                    <col width=5%>
+                    <tr><td><h6>{{ order.date|date:"d.m.y" }}</h6></td><td>{% include 'grid_op.html' %}</td><th><p class="text-center"><a href="{% url 'get_parts' part_id=order.id  %}"><span class="glyphicon glyphicon-cog"></span></a></p></th><td><h6>{% include 'grid_op_price.html' %}</h6></td><td><h6>{{ order.order_customer.newcus_name }} {{ order.order_device.brand }} {{ order.order_device.br_model }} {{ order.order_device.serial_num }}</h6></td><td><h6>{{ order.count_now }}</h6></td><td><h6>{{ order.order_repaier.repaier_name }}</h6></td>
+                    </tr>
+                </table>
+
+
+
+

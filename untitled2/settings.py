@@ -51,7 +51,7 @@ ROOT_URLCONF = 'untitled2.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates'),
+        'DIRS': [os.path.join(BASE_DIR, 'templates'), os.path.join(BASE_DIR, 'templates/landing')
                  ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -72,8 +72,12 @@ WSGI_APPLICATION = 'untitled2.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': '',
+        'USER': '',
+        'PASSWORD': '',
+        'HOST' : '',
+        'PORT' : ''
     }
 }
 
@@ -115,7 +119,7 @@ STATIC_ROOT = ''
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (
-    (os.path.join(BASE_DIR, "login/static"), '/home/vlad/PycharmProjects/copyies/untitled2/login/static/css/'),
+    (os.path.join(BASE_DIR, "login/static"), ''),
 )
 
 

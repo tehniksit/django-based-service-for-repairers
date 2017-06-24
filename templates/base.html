@@ -23,9 +23,7 @@
             <div class="col-md-12">
                 {% include "navigations.html" %}
             </div>
-            <div class="col-md-1">
 
-            </div>
           <div class="col-md-3">
 
                  {% block title_form %}{% endblock %}
@@ -58,7 +56,7 @@
 
 
 
-          <div class="col-md-8">
+          <div class="col-md-9">
               <form method="GET" action="">{% csrf_token %}
                   <div class="input-group">
                     <input type="text" class="form-control" name="q" placeholder="Поиск" value="{{ request.GET.q }}">

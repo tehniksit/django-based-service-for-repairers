@@ -1,11 +1,42 @@
 {% extends 'base.html' %}
+
+
+
 {% block get_parts %}
+     <form action="{% url 'landing' sort_id="1" %}">
 
-    {% for order in part1 %}
-        {% for order_part in order.order_part.all %}{{ order_part }}<br/>{% endfor %}
+                <table class="table-bordered" width=100%>
+                    <col width=100%>
+
+                    <tr><td><h5>Установленные запчасти</h5></td>
+                    </tr>
+
+                </table>
+
+            {% for order in part1 %}
+                {% for order_part in order.order_part.all %}
+
+
+                <table class="table-hover" width=100%>
+                    <col width=25%>
+                    <col width=45%>
+                    <col width=25%>
+                    <col width=5%>
+
+                    <tr><td><h6>{{ order_part.category_part }}</h6></td><td><h6>{{ order_part.name_part }}</h6></td><td><h6>{{ order_part.part_number }}</h6></td><td><h6>-</h6></td>
+                    </tr>
+                </table>
+                {% endfor %}
+             {% endfor %}
+
+        <button href="landing" class="btn btn-lg btn-info btn-block" type="submit">Назад</button>
+     </form>
 
 
 
-{% endfor %}
+
+
+
+
 
 {% endblock %}
