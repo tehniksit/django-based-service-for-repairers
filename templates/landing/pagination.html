@@ -1,0 +1,11 @@
+<ul class="pagination pagination-sm" style="margin:0 0 0 0; padding:0 0 0 0;">
+{% for pn in sort1.paginator.page_range %}
+    {% if pn == current_page %}
+        <li class="active"><a  href="{% url 'landing' sort_id="1" %}?page={{ pn }}">{{ pn }}</a></li>
+    {% elif pn != current_page %}
+        <li><a  href="{% url 'landing' sort_id="1" %}?page={{ pn }}">{{ pn }}</a></li>
+    {% endif %}
+{% endfor %}
+
+</ul>
+
