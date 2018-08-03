@@ -1,8 +1,5 @@
-Hello everyone!
+The django-based service for employees of repair's printer service to store orders and other stuff in this field in database.
 
-The django-based service for employees of repair's service with database.
+This web-app is written on python-django.
 
-This is web-app which written on python-django.
-I have a little plan of development. And i am going to implement that as it possible.
-
-I use MySql.
+Database is MySql.
